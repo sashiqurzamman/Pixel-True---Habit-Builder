@@ -7,4 +7,113 @@
     android:layout_height="match_parent"
     tools:context=".IntroductionPageThree">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="CREATE NEW \nHABIT EASILY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/intro_img_two" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="We can help you to be a \nbetter version of yourself."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Skip -->
+        <TextView
+            android:id="@+id/skipText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="Skip"
+            android:textColor="#4A235A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Dot Indicators -->
+        <LinearLayout
+
+            android:id="@+id/dotContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Active Dot -->
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/dot_shape_inactive" />
+
+            <!-- Inactive Dots -->
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/dot_shape_active" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/dot_shape_inactive" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/dot_shape_inactive" />
+        </LinearLayout>
+
+        <!-- Next -->
+        <TextView
+            android:id="@+id/nextText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Next"
+            android:textColor="#4A235A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
