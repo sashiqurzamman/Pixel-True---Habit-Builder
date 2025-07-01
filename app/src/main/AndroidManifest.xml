@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
             android:name=".IntroductionPageFive"
             android:exported="false" />
         <activity
@@ -23,9 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".IntroductionPageTwo"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
